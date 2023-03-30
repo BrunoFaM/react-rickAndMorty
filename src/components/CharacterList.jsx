@@ -39,7 +39,7 @@ function CharacterList() {
   ) : (
     <>
       <NavPage page={page} setPage={setPage} />
-      <div className="grid grid-cols-3 gap-1  ml-8 mr-8">
+      <div className="flex flex-col  items-center sm:grid sm:grid-cols-3 gap-1  ml-8 mr-8">
         {characters.map((character) => {
           return <Character key={character.id} character={character} />;
         })}
